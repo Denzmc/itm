@@ -2,6 +2,7 @@ package task0413;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.util.Scanner;
 
 /* 
 День недели
@@ -24,7 +25,27 @@ Requirements:
 
 public class Solution {
     public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
+        Scanner scanner = new Scanner(System.in);
+        int day = scanner.nextInt();
+        String str = "";
+        switch (day){
+            case 1: str = "Monday";
+            break;
+            case 2: str = "Tuesday";
+            break;
+            case 3: str = "Wednesday";
+            break;
+            case 4: str = "Thursday";
+            break;
+            case 5: str = "Friday";
+            break;
+            case 6: str = "Saturday";
+            break;
+            case 7: str = "Sunday";
+            break;
+            default: str = "Such day doesn't exist";
+        }
+        System.out.println(str);
 
     }
 }
