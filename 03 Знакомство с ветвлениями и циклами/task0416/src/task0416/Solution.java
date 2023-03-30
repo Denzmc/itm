@@ -2,6 +2,7 @@ package task0416;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.util.Scanner;
 
 /* 
 Переходим дорогу вслепую
@@ -40,7 +41,17 @@ Requirements:
 
 public class Solution {
     public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
+        Scanner scanner = new Scanner(System.in);
+        double hour = scanner.nextDouble();
+        hour = hour%5;
 
+        String str = "";
+        if (hour<3 ) str = "зеленый";
+        else if (hour>=4 ) str = "красный";
+        else str = "желтый";
+
+        System.out.println(str);
+
+        scanner.close();
     }
 }

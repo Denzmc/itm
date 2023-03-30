@@ -2,6 +2,8 @@ package task0420;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.util.Arrays;
+import java.util.Scanner;
 
 /* 
 Сортировка трех чисел
@@ -18,7 +20,19 @@ Requirements:
 
 public class Solution {
     public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
+        int [] arr =new int[3];
+        Scanner scanner = new Scanner(System.in);
 
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = scanner.nextInt();
+        }
+
+        Arrays.sort(arr);
+
+        for (int i = arr.length-1; i >-1 ; i--) {
+            System.out.print(arr[i]+" ");
+        }
+
+        scanner.close();
     }
 }
