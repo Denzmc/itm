@@ -2,6 +2,7 @@ package task0442;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.util.Scanner;
 
 /* 
 Суммирование
@@ -26,7 +27,16 @@ Requirements:
 
 public class Solution {
     public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
+        Scanner sc = new Scanner(System.in);
+        int sum = 0;
+        while (true) {
+            int number = sc.nextInt();
+            sum += number;
+            if (number == -1)
+            break;
+        }
+
+        System.out.println(sum);
 
     }
 }

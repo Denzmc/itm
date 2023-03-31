@@ -2,6 +2,7 @@ package task0426;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.util.Scanner;
 
 /* 
 Ярлыки и числа
@@ -31,7 +32,14 @@ Requirements:
 
 public class Solution {
     public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
+        Scanner scanner = new Scanner(System.in);
+        int num = scanner.nextInt();
 
+        if (num==0) System.out.println("ноль");
+        if (num>0 && (num%2)==0) System.out.println("положительное четное число");
+        if (num<0 && (num%2)==0) System.out.println("отрицательное четное число");
+        if (num>0 && (num%2)!=0) System.out.println("положительное нечетное число");
+        if (num<0 && (num%2)!=0) System.out.println("отрицательное нечетное число");
+        scanner.close();
     }
 }

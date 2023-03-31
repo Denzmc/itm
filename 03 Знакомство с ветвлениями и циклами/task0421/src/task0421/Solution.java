@@ -2,6 +2,7 @@ package task0421;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.util.Scanner;
 
 /* 
 Настя или Настя?
@@ -19,7 +20,14 @@ Requirements:
 
 public class Solution {
     public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
+        Scanner sc = new Scanner(System.in);
+        String n1 = sc.nextLine();
+        String n2 = sc.nextLine();
+
+        if (n1.equals(n2))
+            System.out.println("Имена идентичны");
+        else if (n1.length() == n2.length())
+            System.out.println("Длины имен равны");
 
     }
 }

@@ -2,6 +2,7 @@ package task0424;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.util.Scanner;
 
 /* 
 Три числа
@@ -23,7 +24,16 @@ Requirements:
 
 public class Solution {
     public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
+        int[] arr = new int[3];
+        Scanner scanner = new Scanner(System.in);
 
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = scanner.nextInt();
+        }
+        if (arr[0] == arr[1]) System.out.println(3);
+        if (arr[2] == arr[1]) System.out.println(1);
+        if (arr[0] == arr[2]) System.out.println(2);
+
+        scanner.close();
     }
 }
